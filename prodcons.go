@@ -1,5 +1,7 @@
 package main
 
+// Exercício 2 dos slides de PC
+
 import (
 	"fmt"
 	"math/rand"
