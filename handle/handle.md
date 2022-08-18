@@ -1,7 +1,7 @@
 # Pseudo-código para a questão handle
 
 ## Enunciado questão
-![questao](/concorrente/handle/enunciado.jpeg)
+![questao](enunciado.jpeg)
 
 ## Resposta
 ```python
