@@ -16,7 +16,7 @@ func main() {
 		go func(i int) {
 			sleepTime := time.Duration(rand.Intn(5)) * time.Second
 			time.Sleep(sleepTime)
-			fmt.Println("hi im:  ", i)
+			fmt.Println("hi im:  ", i, ", time: ", sleepTime)
 			join <- 1
 		}(i)
 	}
