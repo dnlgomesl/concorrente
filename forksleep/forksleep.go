@@ -14,14 +14,15 @@ func main() {
 	for i := 0; i < n; i++ {
 		rand.Seed(12)
 		go func(i int) {
-			time.Sleep(time.Second * 5)
+			sleepTime := time.Duration(rand.Intn(5)) * time.Second
+			time.Sleep(sleepTime)
 			fmt.Println("hi im:  ", i)
 			join <- 1
 		}(i)
 	}
 
 	for i := 0; i < n; i++ {
-			<-join
+		<-join
 	}
 
 	fmt.Println("done")
